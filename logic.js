@@ -1,3 +1,12 @@
+function loadApps(){
+  var cities = ["Sup","fuck"];
+  var ulElement = document.getElementById("Mainlist");
+    for (var city in cities){
+      var listItem = ulElement.appendChild(document.createElement("li"));
+      listItem.appendChild(document.createTextNode(cities[city]));
+    }
+}  		
+
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
